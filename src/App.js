@@ -1,6 +1,6 @@
 import "./App.css";
 
-function App() {
+function Content() {
   return (
     <div>
       <img src='./react-logo.png' alt='React logo' width='40px' />
@@ -13,6 +13,12 @@ function App() {
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Content />
   );
 }
 
