@@ -1,4 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 html, body {
   margin: 0;
-  padding: 10px;
+  padding: 0;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  background-color: #282D35;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21222A;
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #61DAFB;
+}
+
+.react-logo {
+  width: 40px;
+}
+
+.header-text {
+  color: #DEEBF8;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: white;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li::marker {
+  color: #61DAFB;
+  font-size: 1.5em;
 }
