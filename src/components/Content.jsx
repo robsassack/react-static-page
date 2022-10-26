@@ -3,7 +3,7 @@ import React from "react";
 function Content() {
   return (
     <div className="content">
-      <h1>Fun facts about React</h1>
+      <h1 className="content-title">Fun facts about React</h1>
       <ul className="content-list">
         <li>Was first released in 2013</li>
         <li>Was originally created by Jordan Walke</li>
