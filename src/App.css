@@ -56,6 +56,12 @@ img {
   color: white;
 }
 
+.content {
+  background-image: url("react-icon-large.png");
+  background-repeat: no-repeat;
+  background-position: right 75%;
+}
+
 .content-title {
   margin: 0;
   letter-spacing: -0.05em;
