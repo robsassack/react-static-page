@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@ html, body {
   background-color: #282D35;
 }
 
-.header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +45,7 @@ img {
 
 .header-text {
   color: #DEEBF8;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .content {
