@@ -6,16 +6,28 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Inter", Helvetica, Arial, sans-serif;
-  background-color: #282D35;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #21222A;
+  background-color: white;
   padding: 0 20px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
+
+nav.dark {
+  background-color: #21222A;
+}
+
 
 img {
   animation: rotation 5s infinite linear;
@@ -30,7 +42,7 @@ img {
   }
 }
 
-.logo-container {
+.nav--logo-container {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -40,7 +52,7 @@ img {
   letter-spacing: -0.05em;
 }
 
-.react-logo {
+.nav--logo-icon {
   width: 40px;
 }
 
@@ -49,25 +61,90 @@ img {
   font-weight: 600;
 }
 
-.content {
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+main {
   display: flex;
   flex-direction: column;
   padding: 30px 50px;
+  background-image: url("react-icon-light.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: white;
+  flex: 1 1 auto;
+  color: #2B283A;
+}
+
+main.dark {
+  background-image: url("react-icon-dark.png");
+  background-color: #282D35;
   color: white;
 }
 
-.content {
-  background-image: url("react-icon-large.png");
-  background-repeat: no-repeat;
-  background-position: right 75%;
-}
-
-.content-title {
+.content--title {
   margin: 0;
   letter-spacing: -0.05em;
 }
 
-.content-list {
+.content--list {
   display: flex;
   flex-direction: column;
   gap: 15px;
